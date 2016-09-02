@@ -1,14 +1,7 @@
 import { Component } from '@angular/core'
 
-import { NavLeftComponent } from './nav-left.component'
-import { TopNavContainer } from './nav-top.component'
-
 @Component({
   selector: 'app',
-  directives: [
-    NavLeftComponent,
-    TopNavContainer
-  ],
   styles: [`
     .main {
       padding: 20px;

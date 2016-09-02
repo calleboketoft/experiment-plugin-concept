@@ -2,7 +2,7 @@
 declare var iFrameResize: any
 
 import { Component, Input } from '@angular/core'
-import { DomSanitizationService } from '@angular/platform-browser'
+import { DomSanitizer } from '@angular/platform-browser'
 import { ActivatedRoute } from '@angular/router'
 
 import { NotificationService } from '../notification.service'
@@ -34,13 +34,13 @@ export class PluginAppComponent {
   public iframeSrc;
 
   constructor (
-    private domSanitizationService: DomSanitizationService,
+    private domSanitizer: DomSanitizer,
     private notificationService: NotificationService,
     private activatedRoute: ActivatedRoute
   ) {
     let pluginAppOptions = this.activatedRoute.data['value']
     let indexPath = pluginAppOptions.indexPath
-    this.iframeSrc = this.domSanitizationService.bypassSecurityTrustResourceUrl(indexPath)
+    this.iframeSrc = this.domSanitizer.bypassSecurityTrustResourceUrl(indexPath)
   }
 
   public ngAfterViewInit () {

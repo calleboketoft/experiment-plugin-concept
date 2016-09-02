@@ -9,11 +9,16 @@ import { PluginAppComponent } from './routes/plugin-app.component'
 import { AppHomeComponent } from './routes/app-home.component'
 import { NotificationService } from './notification.service'
 
+import { NavLeftComponent } from './nav-left.component'
+import { TopNavContainer } from './nav-top.component'
+
 @NgModule({
   declarations: [
     AppComponent,
     PluginAppComponent,
-    AppHomeComponent
+    AppHomeComponent,
+    NavLeftComponent,
+    TopNavContainer
   ],
   imports: [
     BrowserModule,
