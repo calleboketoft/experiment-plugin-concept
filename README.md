@@ -1,6 +1,13 @@
 # Plugin Apps
 The goal of `Plugin Apps` is to have a `platform app` that links to `plugin apps` and versioning of all these parts can be handled separately.
 
+## Get started
+
+- `npm install`
+- `npm run watch`
+- `npm start`
+- navigate browser to `http://localhost:3000`
+
 **TODO**
 
 - Define API for including a plugin into the platform (via config file)
