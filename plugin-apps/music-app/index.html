@@ -1,0 +1,16 @@
+<html>
+
+<head>
+  <script src="../../node_modules/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
+  <script src="../plugin-app-adaptor.js"></script>
+  <script src="music-app.js"></script>
+</head>
+
+<body>
+  Music App
+  <button type="button" onclick="ssgPluginApp.sendMessageToSourceApp('message from plugin to source')">
+    Send message to source
+  </button>
+</body>
+
+</html>
